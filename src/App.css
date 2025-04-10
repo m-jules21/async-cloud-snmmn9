@@ -1,0 +1,350 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fond global et typographie */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Conteneur principal */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Conteneur des sections */
+.max-w-2xl {
+  max-width: 40rem;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+.font-sans {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Design de la carte principale */
+.max-w-2xl {
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Header avec le nom de l'utilisateur */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.bg-blue-600 {
+  background-color: #3182ce;
+}
+
+.text-white {
+  color: white;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-red-500 {
+  background-color: #f56565;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs pour les sections */
+.flex gap-2 {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.bg-gray-200 {
+  background-color: #edf2f7;
+}
+
+.bg-blue-600 {
+  background-color: #3182ce;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Avis et Membres */
+.space-y-4 {
+  margin-top: 1rem;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-blue-600 {
+  color: #3182ce;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.text-gray-600 {
+  color: #4a5568;
+}
+
+.text-red-500 {
+  color: #f56565;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 0.375rem;
+  border: 1px solid #ccc;
+}
+
+/* Membre Liste */
+.space-y-2 {
+  margin-top: 1rem;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.flex.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-red-500 {
+  color: #f56565;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+/* Formulaires */
+.w-full {
+  width: 100%;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  resize: vertical;
+}
+
+.bg-blue-600 {
+  background-color: #3182ce;
+}
+
+.text-white {
+  color: white;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.375rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .max-w-2xl {
+    padding: 1rem;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+}
+
+.tab-container {
+  display: flex;
+  gap: 8px; /* Augmente l'espace entre les onglets */
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border-radius: 9999px;
+  background-color: #e5e7eb; /* Couleur de fond claire */
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #2563eb; /* Couleur bleu lorsque l'onglet est actif */
+  color: white;
+}

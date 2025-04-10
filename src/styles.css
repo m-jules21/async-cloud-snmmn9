@@ -1,0 +1,76 @@
+import React from "react";
+import { CreditCard, CheckCircle, ThumbsUp, AlertTriangle, BarChart2, PieChart } from "lucide-react";
+
+export default function Dashboard() {
+  return (
+    <div className="min-h-screen bg-[#f9fbfd] p-6 font-sans">
+      <h1 className="text-3xl font-bold text-center mb-8 text-gray-700">My Profile</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {/* Carte Balance */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col justify-between">
+          <div className="flex justify-between items-center">
+            <div>
+              <p className="text-gray-500">Balance</p>
+              <p className="text-2xl font-bold">11.50 €</p>
+              <p className="text-sm text-blue-500 mt-1">⬆ 11.50 €</p>
+            </div>
+            <CreditCard className="bg-indigo-100 text-indigo-500 rounded-lg p-2 w-10 h-10" />
+          </div>
+          <button className="mt-4 bg-cyan-500 text-white px-4 py-2 rounded-md text-sm hover:bg-cyan-600">
+            Voir mes paiements
+          </button>
+        </div>
+
+        {/* Carte Avis Validés */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 flex justify-between items-center">
+          <div>
+            <p className="text-gray-500">Avis Validés</p>
+            <p className="text-2xl font-bold">5</p>
+            <p className="text-sm text-green-500 mt-1">⬆ 5 (62.5%)</p>
+          </div>
+          <CheckCircle className="bg-green-100 text-green-500 rounded-lg p-2 w-10 h-10" />
+        </div>
+
+        {/* Carte Avis Publiés */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 flex justify-between items-center">
+          <div>
+            <p className="text-gray-500">Avis Publiés</p>
+            <p className="text-2xl font-bold">3</p>
+            <p className="text-sm text-green-500 mt-1">⬆ 3</p>
+          </div>
+          <ThumbsUp className="bg-blue-100 text-blue-500 rounded-lg p-2 w-10 h-10" />
+        </div>
+
+        {/* Carte Avis Disparus */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 flex justify-between items-center">
+          <div>
+            <p className="text-gray-500">Avis Disparus</p>
+            <p className="text-2xl font-bold">0</p>
+            <p className="text-sm text-yellow-500 mt-1">⬇ 0</p>
+          </div>
+          <AlertTriangle className="bg-yellow-100 text-yellow-500 rounded-lg p-2 w-10 h-10" />
+        </div>
+
+        {/* Carte Moyennes Quo */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 flex justify-between items-center">
+          <div>
+            <p className="text-gray-500">Moyennes Quo...</p>
+            <p className="text-2xl font-bold">5 avis</p>
+            <p className="text-sm text-blue-500 mt-1">⬆ 11.50 €</p>
+          </div>
+          <BarChart2 className="bg-indigo-100 text-indigo-500 rounded-lg p-2 w-10 h-10" />
+        </div>
+
+        {/* Carte Ratio Validés */}
+        <div className="bg-white rounded-2xl shadow-xl p-6 flex justify-between items-center">
+          <div>
+            <p className="text-gray-500">Ratio Validés</p>
+            <p className="text-2xl font-bold">62.5%</p>
+            <p className="text-sm text-red-500 mt-1">⬇ Total</p>
+          </div>
+          <PieChart className="bg-red-100 text-red-500 rounded-lg p-2 w-10 h-10" />
+        </div>
+      </div>
+    </div>
+  );
+}
